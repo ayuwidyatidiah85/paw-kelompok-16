@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import CreateTodo from "./components/create-todo.component";
 import EditTodo from "./components/edit-todo.component";
 import TodoList from "./components/todo-list.component";
+import DeleteTodo from "./components/delete-todo.component";
 import logo from "./logo.svg";
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
           <br/>
           <Route path="/" exact component={TodoList} />
           <Route path="/edit/:id" component={EditTodo} />
+          <Route path="/delete/:id" component={DeleteTodo} />
           <Route path="/create" component={CreateTodo} />
         </div>
       </Router>
